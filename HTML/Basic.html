@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Favicon.png">
+
+    <!--Define the character set used:
+        <meta charset="UTF-8">
+
+    Define keywords for search engines:
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+
+    Define a description of your web page:
+        <meta name="description" content="Free Web tutorials">
+
+    Define the author of a page:
+        <meta name="author" content="John Doe">
+
+    Refresh document every 30 seconds:
+        <meta http-equiv="refresh" content="30">
+
+    Setting the viewport to make your website look good on all devices:
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+
+        <title> Basic </title>
+    <style>
+        a:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        
+        a:visited {
+            color: rgb(255, 81, 110);
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        th, td {
+            border: 2px solid rgb(104, 3, 96);
+            border-radius: 2px;
+            padding: 10px;
+        }
+        table {
+            border: 2px dashed rgb(104, 3, 96);
+            border-collapse: separate;
+            border-radius: 1px;
+            opacity: 1;
+            width: 50%;
+            border-spacing: 3px;
+        }
+        th {
+            text-align: center;
+            background-color: rgb(251, 160, 236);
+        }
+        td:nth-child(odd) {
+            background-color: rgb(159, 238, 212);
+        }
+        tr:nth-child(even) {
+            background-color: rgb(166, 159, 238);
+        }
+
+    </style>
+</head>
+<p>
+    <h1>Heading 1</h1>
+    <p>paragraph</p>
+
+    <!--Bookmark (When clicking this link page scrolls down or up automatically to where the id is)
+        <a href="#clr">Jump to Colors and types</a>
+        <h2 id="clr">COLORS</h2>
+    -->
+    <h2>Bookmark</h2>
+    <a href="#clr">Jump to clr</a>
+    <br>
+    <a href="Example.html#main1">Jump to Main1 ID in Example.html</a>
+    <br>
+    <h2>Link</h2>
+    <a href="https://en.wikipedia.org/wiki/Kitten" target="_self"> More details on kitten - Target: Self </a>
+    <br>
+    <a href="https://en.wikipedia.org/wiki/Kitten" target="_blank"> More details on kitten - Target: Blank </a>
+    <br>
+    <a href="mailto:abc@jeru.com"> Email us on abc@jeru.com</a>
+    <h2>PREFORMATTED TEXT:</h2>
+    <pre>
+        Preserves    both
+        spaces and        also the line
+        break 
+    </pre>
+    <h2 style="text-align: center;">Text alignment</h2>
+    <strong>Strong / Important!</strong> <br>
+    <b>Bold</b> <br>
+    <i>Italic</i> <em>Emphasized text</em> <br>
+    <mark>Marked / Highlighted text</mark> <br>
+    <small>Smaller text</small> <br>
+    <del>Deleted text</del> <br>
+    <ins>Inserted text</ins> <u>Underlined text</u> <br>
+    This is a <sub>Subscript</sub> text
+    This is a <sup>Superscript</sup> text <br>
+    <bdo dir="rtl">This line will be written from right to left</bdo>
+    <!--Commented
+    Line-->
+    <!--Type Lorem100 to get the below paragraph-->
+    <p style="border: 5px dotted tomato">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem enim excepturi amet beatae, adipisci praesentium aperiam aliquam, nihil dolores alias cupiditate corporis eaque animi numquam dolorum earum minima veniam! Assumenda, molestias non voluptates doloremque dolore soluta! Aliquam, eligendi facilis? Aut impedit ipsam soluta quae optio molestias dolor veniam expedita ratione neque consequatur porro atque saepe eos consequuntur laborum culpa, quam iusto voluptas quibusdam? Mollitia, odit autem. Asperiores nostrum animi laboriosam blanditiis exercitationem veritatis rem inventore optio sed repellat, minus, mollitia praesentium autem voluptates pariatur laudantium sapiente assumenda. Cupiditate porro ex sequi cum eveniet itaque asperiores, dolorem nulla, dolor consequuntur qui.</p>
+    <p style="border: 3px solid tomato; padding: 50px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem enim excepturi amet beatae, adipisci praesentium aperiam aliquam, nihil dolores alias cupiditate corporis eaque animi numquam dolorum earum minima veniam! Assumenda, molestias non voluptates doloremque dolore soluta! Aliquam, eligendi facilis? Aut impedit ipsam soluta quae optio molestias dolor veniam expedita ratione neque consequatur porro atque saepe eos consequuntur laborum culpa, quam iusto voluptas quibusdam? Mollitia, odit autem. Asperiores nostrum animi laboriosam blanditiis exercitationem veritatis rem inventore optio sed repellat, minus, mollitia praesentium autem voluptates pariatur laudantium sapiente assumenda. Cupiditate porro ex sequi cum eveniet itaque asperiores, dolorem nulla, dolor consequuntur qui.</p>
+    <p style="border: 10px double tomato; margin: 50px">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem enim excepturi amet beatae, adipisci praesentium aperiam aliquam, nihil dolores alias cupiditate corporis eaque animi numquam dolorum earum minima veniam! Assumenda, molestias non voluptates doloremque dolore soluta! Aliquam, eligendi facilis? Aut impedit ipsam soluta quae optio molestias dolor veniam expedita ratione neque consequatur porro atque saepe eos consequuntur laborum culpa, quam iusto voluptas quibusdam? Mollitia, odit autem. Asperiores nostrum animi laboriosam blanditiis exercitationem veritatis rem inventore optio sed repellat, minus, mollitia praesentium autem voluptates pariatur laudantium sapiente assumenda. Cupiditate porro ex sequi cum eveniet itaque asperiores, dolorem nulla, dolor consequuntur qui.</p>
+    
+    <!--COLRS:-->
+    <!--RGB-->
+    <h2 id="clr">COLORS</h2>
+    <p style="color: rgb(255, 0, 0);"> RGB - rgb(255, 0, 0) </p>
+    <p style="color: rgb(0, 255, 0);"> RGB - rgb(0, 255, 0) </p>
+    <p style="color: rgb(0, 255, 255);"> RGB - rgb(0, 255, 255) </p>
+    <p style="color: rgb(163, 219, 255); background-color: black;">RGB - rgb(163, 219, 255)</p>
+    <p style="color: rgba(247, 94, 170, 1); background-color: black;">RGBA - rgba(247, 94, 170, 1) where A can b 1 or 0 and 0 is 'Transparent' and 1 is 'not Transparent'</p>
+    <!--HEX-->
+    <p style="background-color: #ff0000;">Hex color (rrbbgg) (#ff0000) - ff is the highest value</p>
+    <!--HSL-->
+    <div style="background-color: hsl(139, 50%, 50%);"> HSL (Hue, Saturation, Lightness) <br> 
+        Hue (0 to 360): 0 - Red, 120 - Green, 240 - Blue <br>
+        Saturation (0 to 100): 0% - Grey, 100% - Full color <br>
+        Lightness (0 to 100) : 0% - Black, 100% - White
+        <div style="border: 5px, solid, rgb(7, 66, 17);">
+            background-color: hsl(139, 50%, 50%)
+        </div>
+    </div>
+    <br>
+    <button onclick="document.location='Example.html'"> Example page </button>
+    <br><br>
+
+    <!--IMAGES-->
+    <h2>IMAGES</h2>
+    <h4>Absolute file path</h4>
+    <img src="https://media1.tenor.com/m/HofsbGhfgAEAAAAC/cat-arrive-cat.gif" style="height: 100px; width: 100px;">
+    <br>
+    <h4>Relative file path</h4>
+    <p>In the following example, the file path points to a file in the images folder <strong style="text-decoration: underline;">located in the current folder:</strong></p>
+    <p style="background-color: black; color: white;">src="favicon.png"</p>
+    <img src="Favicon.png" alt="Mountain" style="height: 100px; width: 100px;">
+    <p>In the following example, the file path points to a file in the images folder <strong style="text-decoration: underline;">located in the folder one level up from the current folder:</strong></p>
+    <p style="background-color: black; color: white;">src="../images/favicon.png"</p>
+    <img src="../images/favicon.png" alt="Mountain">
+
+    <!--Float-->
+    <h2>Float</h2>
+    <p>
+        FLOT RIGHT:
+        <img src="https://media1.tenor.com/m/HofsbGhfgAEAAAAC/cat-arrive-cat.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+        A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.
+    </p>
+    
+    <!--IMAGE MAP-->
+    <h2>IMAGE MAP</h2>
+    <img src="https://www.w3schools.com/html/workplace.jpg" alt="Workplace" usemap="#workmap">
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="Example.html">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="Example.html">
+        <area shape="circle" coords="337,300,44" alt="Coffee" href="Example.html" onclick="myFunction()">
+    </map>
+    <script>
+        function myFunction() {
+            alert("You clicked the coffee cup!");
+        }
+    </script>
+
+    <!--BACKGROUND IMAGE-->
+    <h2>BACKGROUND IMAGE</h2>
+    <p style="background-size: cover; background-attachment: fixed; background-repeat: no-repeat; background-image: url('http://wallpapercave.com/wp/wp1871719.jpg');">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptate quibusdam itaque molestias adipisci dolorum eligendi ab architecto blanditiis aperiam hic esse ducimus dignissimos, magni placeat incidunt facere iste vero accusamus minus at repudiandae illo? Corrupti in nam ea alias, quibusdam reprehenderit repellat, voluptates architecto accusantium impedit adipisci obcaecati vero quia ex dolorum doloribus amet. Nobis provident vel error at! Ad, veniam. Nihil ratione similique rerum nesciunt provident commodi saepe expedita fugit ad laborum vitae dolorem incidunt maiores, ab aliquam minus eligendi tempore? Nulla minima aliquam ipsum sunt reiciendis enim nisi facere eum aut velit provident deleniti ullam earum necessitatibus magni nesciunt, aperiam veniam neque expedita totam distinctio. Ducimus facere tempora architecto obcaecati reiciendis nostrum rem iste animi incidunt minima deserunt eveniet, consequatur officiis laboriosam mollitia natus laborum rerum? Officiis dolores architecto nesciunt sequi sed laboriosam accusantium veritatis provident quidem cum eveniet adipisci atque, ipsa veniam corrupti consequuntur quis repellendus inventore perspiciatis, quibusdam repudiandae nemo enim cumque? Optio consequatur est itaque dolorum iste in fuga atque nemo? Architecto voluptatem doloremque quidem facilis aliquam perspiciatis debitis eveniet ratione dolorum veniam molestias quis odit odio ducimus, voluptatibus laborum soluta deleniti magni delectus. Repellat voluptate voluptates rem sint nemo non dolores nostrum ducimus ullam, magni dignissimos unde, quo hic soluta nisi sunt consectetur facilis eligendi labore maiores? Natus consequuntur ullam quam repellendus aliquam doloremque nihil blanditiis quibusdam ducimus vero. Eveniet architecto nisi recusandae impedit sint in, ducimus, neque odio expedita provident et! Saepe quod dolorem sequi id voluptates ipsam quos sed debitis dignissimos eaque voluptas dicta quia illo voluptatum accusamus voluptatem consequatur cum, rerum quae dolores nam mollitia magnam! Quos sit reprehenderit recusandae magnam, expedita earum omnis id? Consectetur, amet beatae sint, totam exercitationem explicabo reiciendis iure, ducimus ipsum officia dignissimos? Animi amet facilis exercitationem expedita laboriosam voluptatibus, pariatur aliquam, eum nam vel quia, dolorem consequuntur consequatur et. Veniam recusandae, nesciunt cupiditate ipsa molestiae fugit eaque saepe. At alias iusto fugit in. Aliquam maiores tenetur soluta perspiciatis, voluptate, doloribus odit provident accusantium dolorem sed doloremque iure, eos incidunt molestias deserunt nostrum eaque animi esse molestiae. Minima officiis modi qui corporis aut doloribus nemo pariatur mollitia aliquid ad harum eaque, possimus natus reprehenderit! Fuga qui accusantium, consectetur impedit eaque recusandae sapiente repellat iste blanditiis quas minus nihil vitae similique labore, nulla molestiae quidem hic corrupti. Quidem voluptatum laborum recusandae sed dicta quasi libero, expedita sint tenetur. Culpa, veniam rem cupiditate at consequuntur deserunt ipsa eaque magnam mollitia. Quia at, voluptates accusamus perspiciatis sit maxime nulla dolore quas. A, molestias illo autem adipisci corporis eum placeat unde aut quae impedit voluptatem neque pariatur corrupti? Quam repellendus labore est suscipit praesentium delectus id excepturi reiciendis expedita quia aperiam beatae fuga veritatis quae tempora, earum illum impedit maxime nobis, rem nulla, ex architecto laudantium. Natus, molestias saepe tempore eaque alias quod illum nobis nulla fugit a provident iure facilis esse asperiores ipsa molestiae quo eos nemo impedit praesentium dolores! Nesciunt commodi amet facilis veniam tempora, iure mollitia tenetur nemo excepturi consectetur impedit doloribus, similique recusandae obcaecati? Perspiciatis nulla nemo repellat voluptate! Atque odio distinctio, explicabo nostrum soluta aliquid cumque repellat nulla molestias qui. Animi nesciunt quam ad fugit alias enim dolorem veniam, accusantium, obcaecati eos veritatis aut expedita ea voluptatem eum vitae quae doloribus quo? Quasi porro quam voluptatibus ipsum quaerat corporis consequuntur alias accusamus reiciendis error! Reprehenderit dolore voluptatem placeat, debitis hic porro harum. Iste a soluta nobis voluptas accusamus, ducimus est beatae temporibus quibusdam adipisci perspiciatis error sequi, molestias qui, explicabo corporis quam assumenda architecto rerum laudantium excepturi illo neque repellendus vero. Ullam consequatur nisi inventore ipsam consequuntur placeat error porro iusto voluptate dolorum sint expedita eius doloremque a fugiat, saepe libero quidem quis eum consectetur quod natus voluptatum? Excepturi eligendi, minima aspernatur ipsam cupiditate tempora quibusdam ipsa ipsum a corrupti minus sit ad provident. Dicta quae dolor modi ipsum ipsa, quisquam dolores libero molestiae quaerat id aliquam? Magnam illo pariatur reprehenderit voluptas nisi assumenda animi maiores, dolorem cum quibusdam quo ullam praesentium eum voluptatem sunt in quae quod hic voluptatibus eveniet iusto non laudantium incidunt autem. Dolores ab natus perferendis vero accusamus consequuntur explicabo fuga, quas atque, error consectetur! Ipsam ullam minus laudantium? Dolore dolorem, a fuga adipisci exercitationem repellat illo suscipit. Voluptate fugiat, suscipit architecto reiciendis explicabo molestiae et autem accusantium repellat cumque dicta voluptatem a doloremque exercitationem veniam in eos porro enim aut iure laborum illo esse nobis! Molestiae dolor ad, fugit neque veniam, dolores recusandae praesentium eveniet facere ea minus. Voluptas saepe sed pariatur quis non natus quo blanditiis vero nemo cumque recusandae aliquid quae vitae enim esse fugit, officiis distinctio tenetur! Amet blanditiis animi possimus ducimus corporis! Delectus, accusamus! Dolores accusantium provident aspernatur nostrum quam perferendis excepturi molestias labore iure animi? Nobis molestiae, veritatis aliquid laudantium iste vero aut! Distinctio, sunt officiis temporibus molestias architecto, eaque ea nisi quam culpa veniam, possimus vel tenetur quod reiciendis quis pariatur accusantium ipsam sint quas iure soluta. Repellendus optio ab ad aliquid nisi nobis esse quis labore animi exercitationem debitis pariatur perspiciatis, maxime vero eos magnam voluptatum culpa hic ipsam alias commodi, similique recusandae. Eius doloremque tempore esse aut fuga. Quasi repellendus laboriosam tempora, qui quibusdam quis perferendis tempore odio quo odit aliquid excepturi nisi itaque doloribus quidem non. Voluptatum dicta hic sunt facilis dolorum error quas numquam labore. Culpa omnis fugiat doloremque sapiente cum earum maiores, recusandae laudantium minima dignissimos? Corporis itaque ipsa dignissimos vel laborum deserunt magni cumque voluptates temporibus perspiciatis. Doloribus aperiam consequatur voluptatem maiores porro nemo provident obcaecati dicta minus iusto quidem, illum repudiandae alias ut ipsa nihil voluptate tempora esse, rerum unde earum cum temporibus animi eveniet! Velit minima alias itaque doloribus placeat accusamus perferendis nulla dolore eos asperiores, numquam sapiente rem saepe assumenda totam? Quaerat corporis magni doloribus hic molestiae? Architecto, facilis unde saepe illum fuga veritatis laudantium necessitatibus cum quidem ducimus. At eius natus debitis aliquid ipsum rem magni est maxime cumque exercitationem quod iusto sunt officia nostrum perferendis dolores consequatur, reprehenderit adipisci velit! Suscipit incidunt blanditiis non deserunt fugit autem quaerat perferendis facere aut at.</p>
+
+    <!--PICTURE ELEMENT (Different picture for diff screen size)-->
+    <h2>PICTURE ELEMENT (Different picture for diff screen size)</h2>
+    <picture >
+        <source media="(min-width: 1362px)" srcset="https://tse1.mm.bing.net/th?id=OIP.CBFZpMOFqyCjyHOJxouwVAHaE8&pid=Api">
+        <source media="(min-width: 681px)" srcset="https://tse4.mm.bing.net/th?id=OIP.tMkCxRlzK5SORQb59-nPBAHaEo&pid=Api&P=0&h=180">
+        <img src="https://beautiful-insanity.org/wp-content/uploads/2018/10/flower-bouquet-delivery-luxury-12-beautiful-flower-bouquets-12-gyonyorac2b1-viragcsokor-megaport-of-flower-bouquet-delivery.jpg">
+    </picture>
+
+    <!--Favicon (Icon next to your Title in the webpage)
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    Save the image in any of the folder and enter its path in href
+    This link element should be added in the head above the title
+    -->
+
+    <!--Table-->
+    <h2>TABLE</h2>
+    <table>
+        <caption>Member's details</caption>
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2" style="width: 70%;">Person 1</th>
+            <th rowspan="2">Person 2</th>
+        </tr>
+        <tr>
+            <th style="width: 35%;">First Name</th>
+            <th style="width: 35%;">Second Name</th>
+        </tr>
+        <tr style="height: 100px;">
+            <th>Name</th>
+            <td>Emil</td>
+            <td>Tobias</td>
+            <td>Linus</td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td>16</td>
+            <td>14</td>
+            <td>10</td>
+        </tr>
+    </table>
+    <br>
+    <a href="Table.html" target="_blank">More details on table</a>
+    <!--
+        th, td {
+            border: 2px solid rgb(104, 3, 96);
+            background-color: rgb(246, 172, 213);
+            border-radius: 2px;
+            padding: 10px;
+        }
+        table {
+            border: 2px dashed rgb(104, 3, 96);
+            border-collapse: separate;
+            border-radius: 1px;
+            opacity: 1;
+            width: 50%;
+            border-spacing: 3px;
+        }
+        th {
+            text-align: center;
+        }
+        td:nth-child(odd) {
+            background-color: rgb(159, 238, 212);
+        }
+        tr:nth-child(even) {
+            background-color: rgb(166, 159, 238);
+        }
+
+        Border style:
+        dotted     
+        dashed     
+        solid     
+        double     
+        groove     
+        ridge     
+        inset     
+        outset     
+        none     
+        hidden
+    -->
+
+    <!--LIST-->
+    <h2>LIST</h2>
+    <h4>Unordered list</h4>
+    <ul style="list-style-type:circle;">
+        <!--list-style-type: disc, circle, square, none;"-->
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <h4>Ordered list</h4>
+    <ol type="I" start="5">
+        <!--type = 1, A, a, I, i-->
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <h4>A Description List</h4>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+    </dl>
+
+    <!--NESTED LIST-->
+    <h2>NESTED LIST</h2>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea
+            <ul>
+                <li>Black tea</li>
+                <li>Green tea</li>
+            </ul>
+        </li>
+        <li>Milk</li>
+    </ul>
+    <a href="List.html">More details on List</a>
+    <!--DIV-->
+    <h2>
+        <div style="background-color:#FFF4A3;">
+            <h2>London</h2>
+            <p>London is the capital city of England.</p>
+            <p>London has over 9 million inhabitants.</p>
+        </div>
+    
+        <div style="background-color:#FFC0C7;">
+            <h2>Oslo</h2>
+            <p>Oslo is the capital city of Norway.</p>
+            <p>Oslo has over 700,000 inhabitants.</p>
+        </div>
+
+        <div style="background-color:#D9EEE1;">
+            <h2>Rome</h2>
+            <p>Rome is the capital city of Italy.</p>
+            <p>Rome has over 4 million inhabitants.</p>
+        </div>
+    </h2>
+    <a href="Div.html">For more info on DIV</a>
+
+    <!--Array and innerhtml-->
+    <h2>Array and innerhtml</h2>
+    <a href="Array using class .html">Array using Class</a> <br>
+    <a href="innerhtml using id.html">Innerhtml using ID</a>
+
+    <!--Iframe-->
+    <h2>Iframe (webpage inside an webpage)</h2>
+    <iframe src="Example.html" style="height:300px;width:300px; border: 2px dashed rgb(232, 120, 120);" title="Iframe Example"></iframe>
+    <br>
+
+    <iframe src="iframe example.html" name="iframename" style="height:300px;width:300px; border: 2px dashed rgb(232, 120, 120);" title="Iframe Example"></iframe>
+    <br>
+    <a target="iframename" href="Example.html">Click here to reveal the message</a>
+
+    <!--Date-->
+    <h2>Date</h2>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()"><a href="#demo">Click me to display Date and Time.</a></button>
+    <p id="demo"></p>
+
+    <!--Fuction call-->
+    <h2>Function call</h2>
+    <img id="myImage" src="https://www.w3schools.com/html/pic_bulboff.gif" width="100" height="180">
+    <p>
+        <button type="button" onclick="light(1)">Light On</button>
+        <button type="button" onclick="light(0)">Light Off</button>
+    </p>
+    <script>
+        function light(num) {
+            var pic;
+            if (num==0){
+                pic = "https://www.w3schools.com/html/pic_bulboff.gif"
+            } else {
+                pic="https://www.w3schools.com/html/pic_bulbon.gif"
+            }
+            document.getElementById('myImage').src = pic;
+        }
+    </script>
+
+    <!--Noscript-->
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+
+
+</body>
+</html>
