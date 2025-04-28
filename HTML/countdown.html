@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+</head>
+<body>
+    <form>
+        <label for="h">Enter time for countdown</label>
+        <br>
+        <input name="count" id="h" type="number" placeholder="hh" size="10px">
+        :
+        <label for="m"></label>
+        <input name="count" id="m" type="number" placeholder="mm" size="10px">
+        :
+        <label for="s"></label>
+        <input name="count" id="s" type="number" placeholder="ss" size="10px">
+        <br>
+        <input type="button" onclick="start()" value="Submit">
+    </form>
+    <script>
+        function start() {           
+            var h = document.getElementById("h").value;
+            var m = document.getElementById("m").value;
+            var s = document.getElementById("s").value;
+            document.getElementById("h").value=h;
+            var min=(m*60)*1000;
+            document.getElementById("m").value=m;
+            var sec=s*1000;
+            document.getElementById("s").value=s; 
+            if(s>0) {
+                seconds();
+            }  
+            else if (s==0 && m>0) {
+                minutes();
+            }    
+            else if (s==0 && m==0 && h>0){
+                hours();
+            }
+            else if (s>0 && m==0 && h>0) {
+                seconds();
+            }
+            function seconds() {
+                if (s>0){                       
+                    s=s-1;         
+                    var countdown=setInterval(function() {
+                        document.getElementById("s").value=s;
+                        s=s-1;  
+                        if(s<0) {
+                            s=0;                        
+                            if(s==0 && m==0 && h>0) {
+                                clearInterval(countdown);
+                                hours();
+                            }
+                            else if (s==0 && m>0 && h==0) {
+                                clearInterval(countdown);
+                                minutes();
+                            } 
+                            else if(s==0 && m>0 && h>0) {
+                                m=m-1;
+                                document.getElementById("m").value=m;
+                                s=59;
+                            }
+                            else if (s==0 && m==0 && h==0) {
+                                clearInterval(countdown);
+                            }
+                        }                 
+                    },1000);               
+                } 
+            }
+            function minutes() {
+                if(m>0){
+                    setTimeout(function() {
+                        m=m-1;
+                        document.getElementById("m").value=m;
+                        if(m>=0) {
+                            s=59;
+                            document.getElementById("s").value=s;
+                            seconds();
+                        }
+                    },1000);
+                }
+                else if(s==0 && m==0 && h>0) {
+                    hours();
+                }
+            }
+            function hours() {
+                if(m==0 && s==0 && h>0) {
+                    setTimeout(function() {
+                        h=h-1;
+                        document.getElementById("h").value=h;
+                        m=59;
+                        document.getElementById("m").value=m;
+                        s=59;
+                        document.getElementById("s").value=s; 
+                        seconds();
+                    },1000) 
+                }
+            }
+        }
+    </script>
+</body>
+</html>
